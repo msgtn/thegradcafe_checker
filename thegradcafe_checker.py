@@ -63,6 +63,7 @@ while (1):
     # check if the result is new
     # if new, send the email
     if (scb_old != scb_num):
+        s.login(send_mail, send_pass)
         msg = MIMEText(scb_num)
         msg['Subject'] = 'thegradcafe.com: New admission result for search term \"' + search_query + '\"'
         msg['From'] = send_mail
