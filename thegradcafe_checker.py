@@ -35,6 +35,7 @@ scb_old = 0
 
 # continue forever
 while (1):
+    s.login(send_mail, send_pass)
     # request the page using headers
     req = urllib2.Request(url, headers=hdr)
     # open the page
